@@ -38,5 +38,12 @@ namespace Metody04_08_GitHub
             int soucetLich = CelaCisla.CifLichSoucet(n);
             MessageBox.Show("soucet lich cifer je: " + soucetLich);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int n = int.Parse(textBox5.Text);
+            if (CelaCisla.jePrvocislo(n)) MessageBox.Show("je prvocislo");
+            else MessageBox.Show("neni prvocislo");
+        }
     }
 }
