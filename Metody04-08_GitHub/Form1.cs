@@ -48,9 +48,10 @@ namespace Metody04_08_GitHub
 
         private void button5_Click(object sender, EventArgs e)
         {
+            CelaCisla celcis = new CelaCisla();
             int x = int.Parse(textBox6.Text);
 
-            int pocetDelitelu = CelaCisla.PocetDeliteluSud(x);
+            int pocetDelitelu = celcis.PocetDeliteluSud(x);
             MessageBox.Show("pocet sud delitelu je: " + pocetDelitelu);
         }
     }
